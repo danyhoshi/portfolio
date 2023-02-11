@@ -1,5 +1,16 @@
+:root {
+  --color-base-bg: #171717;
+  --color-pri-text: #fff;
+  --color-sec-text: #4f4f4f;
+  --color-btn-bg: #03c;
+  --font-family: 'DM Sans', sans-serif;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  color: var(--color-pri-text);
+  font-family: var(--font-family);
+  background-color: var(--color-base-bg);
 }
