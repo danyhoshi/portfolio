@@ -21,6 +21,7 @@ body {
 
 h2 {
   font-size: 3rem;
+  margin: 0;
 }
 
 a {
@@ -32,6 +33,10 @@ p {
   font-size: 1.25rem;
 }
 
+small {
+  color: var(--color-sec-text);
+}
+
 *,
 *::after,
 *::before {
@@ -41,4 +46,79 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 999;
+}
+
+.menu-btn {
+  color: var(--color-pri-text);
+  border: none;
+  padding: 0 1rem 0 0;
+  background-color: transparent;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  padding: 0 0 0 1rem;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  left: 0;
+  top: var(--header-height);
+  width: 100%;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.container-svg {
+  cursor: pointer;
+}
+
+.container-svg svg {
+  fill: var(--color-pri-text);
+}
+
+.navbar-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.none {
+  display: none;
+}
+
+.navbar a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: var(--color-pri-text);
+  background-color: var(--color-btn-bg);
+}
+
+.menu-btn:active {
+  transform: rotate(360deg);
 }
