@@ -1,0 +1,44 @@
+:root {
+  --color-base-bg: #171717;
+  --color-pri-text: #fff;
+  --color-sec-text: #4f4f4f;
+  --color-btn-bg: #03c;
+  --font-family: 'DM Sans', sans-serif;
+  --header-height: 4rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-pri-text);
+  font-family: var(--font-family);
+  background-color: var(--color-base-bg);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-pri-text);
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
