@@ -1,10 +1,12 @@
 :root {
   --color-base-bg: #171717;
+  --color-base-bg-transp: #17171799;
   --color-pri-text: #fff;
   --color-sec-text: #4f4f4f;
   --color-btn-bg: #03c;
   --font-family: 'DM Sans', sans-serif;
   --header-height: 4rem;
+  --p-size: 1.25rem;
 }
 
 html,
@@ -20,7 +22,7 @@ body {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: calc(var(--p-size) + 5vw);
   margin: 0;
 }
 
@@ -30,10 +32,10 @@ a {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: var(--p-size);
 }
 
-small {
+.opacity {
   color: var(--color-sec-text);
 }
 
@@ -72,7 +74,7 @@ img {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: calc(1.5rem + 2vw);
   line-height: 1.5rem;
   font-weight: 700;
   padding: 0 0 0 1rem;
@@ -88,6 +90,7 @@ img {
   width: 100%;
   pointer-events: none;
   transition: opacity 0.6s ease;
+  background-color: var(--color-base-bg-transp);
 }
 
 .container-svg {
@@ -112,6 +115,56 @@ img {
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.container-profile {
+  width: 67vw;
+  height: auto;
+}
+
+.container-headline {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 4rem 0 0 0;
+}
+
+.presentation-container {
+  width: 100%;
+  text-align: center;
+}
+
+.container-buttons-headline {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1rem 0 0 0;
+  width: 100%;
+}
+
+.container-buttons-headline button:first-child {
+  font-size: var(--p-size);
+  background-color: var(--color-btn-bg);
+  color: var(--color-pri-text);
+  width: 40%;
+  height: 3rem;
+  border: 1px solid var(--color-btn-bg);
+}
+
+.container-buttons-headline button:last-child {
+  font-size: var(--p-size);
+  background-color: var(--color-base-bg);
+  color: var(--color-pri-text);
+  width: 40%;
+  height: 3rem;
+  border: 1px solid var(--color-pri-text);
 }
 
 .navbar a:hover {
