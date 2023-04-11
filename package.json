@@ -31,7 +31,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "lint-staged": {
-    ".(js)": ["eslint --fix"],
+    "*.(js)": ["eslint --fix"],
     "*.(css|scss)": [
       "stylelint --fix"],
     "*.(html)": ["hint"]
