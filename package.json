@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "> Set up the project, the goal here is to master all of the tools and best practices about Linter and Gitflow.",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "lint-staged": {
-    ".(js)": ["eslint --fix"],
+    "*.(js)": ["eslint --fix"],
     "*.(css|scss)": [
       "stylelint --fix"],
     "*.(html)": ["hint"]
