@@ -87,9 +87,9 @@ img {
   opacity: 0;
   left: 0;
   top: var(--header-height);
-  width: 100%;
+  width:     100%;
   pointer-events: none;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.6 ease;
   background-color: var(--color-base-bg-transp);
 }
 
