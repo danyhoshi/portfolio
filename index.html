@@ -6,11 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <h1>Portfolio</h1>
+    <div class="container">
+        <header class="header-container">
+        
+            <div class="logo">
+                <a href="index.html">Daniela</a>
+            </div>
+            
+            <button type="button" class="menu-btn">
+               <div class="container-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M5.25 37.25V32.7h37.5v4.55Zm0-10.95v-4.55h37.5v4.55Zm0-11v-4.6h37.5v4.6Z"/></svg>
+               </div>
+                <div class="container-svg none">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M12.45 38.7 9.3 35.55 20.85 24 9.3 12.5l3.15-3.2L24 20.8 35.55 9.3l3.15 3.2L27.2 24l11.5 11.55-3.15 3.15L24 27.2Z"/></svg>
+                </div>
+            </button>
+    
+            <nav class="navbar">
+                <a href="">About me</a>
+                <a href="">Skills</a>
+                <a href="">Works</a>
+                <a href="">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="container-headline">
+                <div class="container-profile">
+                    <img src="./img/avatarPortfolio.png" alt="avatarPortfolio">
+                </div>
+                <div class="presentation-container">
+                    <h2>Hi, I am <br> Daniela González</h2>
+                    <p class="opacity">Frontend Developer</p>
+                    <div class="container-buttons-headline">
+                        <button type="button">Download CV</button>
+                        <button type="button">Learn more</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
