@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.4.0",
+  "version": "1.7.1",
   "description": "> Set up the project, the goal here is to master all of the tools and best practices about Linter and Gitflow.",
   "main": "index.js",
   "scripts": {
